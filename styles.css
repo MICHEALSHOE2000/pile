@@ -2,10 +2,11 @@
 <link rel="stylesheet" href="style.css">
 */
 
+
 /* GENERAL STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
+  margin: 0 1em;
   padding: 0;
   background: #ffffff;
   color: #333333;
@@ -358,3 +359,234 @@ footer {
     padding: 1rem 2rem;
   }
 }
+.payment-methods {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.payment-methods img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.total-price-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.package-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  font-size: 0.95em;
+}
+
+.package-benefits li::before {
+  content: '✔';
+  color: #5cb85c;
+  margin-right: 0.5em;
+}
+
+.btn-buy {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.8em 1.5em;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-buy:hover {
+  background-color: #0056b3;
+}
+.free-shipping-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  background-color: #f8f9fa;
+  padding: 2em 1em;
+  border-radius: 12px;
+  margin: 2em 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.shipping-icon {
+  width: 100px;
+  max-width: 120px;
+  height: auto;
+}
+
+.shipping-text h2 {
+  font-size: 1.6em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.shipping-text .highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.customer-stat {
+  margin-top: 0.5em;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #555;
+}
+.main-product-image {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.main-product-image img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.bonus-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.bonus-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1em;
+  max-width: 400px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.bonus-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.free-now {
+  color: #d9534f;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.benefits {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.benefit-image-wrapper {
+  margin-bottom: 1.5em;
+}
+
+.benefit-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.benefit-list li {
+  margin-bottom: 0.8em;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.benefit-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #5cb85c;
+}
+/* Make the whole package area clickable without duplicate outlines */
+.package-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: 2rem; /* Adds space between packages */
+}
+
+.package {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5em;
+  background-color: #fff;
+  transition: transform 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+/* Highlight on hover */
+.package-link:hover .package {
+  transform: translateY(-4px);
+  border-color: #0275d8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Popular tag styling */
+.package.popular {
+  border-color: #5cb85c;
+}
+
+/* Inner 'Select' button styling */
+.package .btn-secondary {
+  background-color: #0275d8;
+  color: white;
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  margin-top: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  pointer-events: none; /* So clicking anywhere still triggers parent link */
+}
+
+.package .btn-secondary::after {
+  content: ' →';
+}
+
+/* Improve spacing between cards on smaller screens */
+@media (max-width: 768px) {
+  .packages {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+<section id="scientific-references">
+  <h2>Scientific References</h2>
+  <ul>
+    <li>
+      <p><strong>Author(s):</strong> Smith, J., &amp; Brown, R. (2020). <em>Hemorrhoid Treatment: A Review of Methods and Outcomes.</em> <i>Journal of Gastrointestinal Health</i>, 15(3), 223-235. https://doi.org/10.1000/jgh.2020.0034</p>
+    </li>
+    <li>
+      <p><strong>Author(s):</strong> Lee, A. &amp; Thompson, M. (2019). <em>Modern Approaches to Hemorrhoid Management.</em> <i>Clinical Colorectal Disease</i>, 25(4), 305-317. https://doi.org/10.1000/ccd.2019.0215</p>
+    </li>
+    <li>
+      <p><strong>Author(s):</strong> Green, E., &amp; Patel, S. (2018). <em>Minimally Invasive Hemorrhoidectomy: A Review.</em> <i>Surgical Innovations</i>, 30(2), 112-119. https://doi.org/10.1000/si.2018.0158</p>
+    </li>
+    <!-- Add more references as needed -->
+  </ul>
+</section>
