@@ -22,11 +22,12 @@ a {
   color: #1a73e8;
   text-decoration: none;
 }
-shipping-image img {
-  max-width: 100%;
-  height: auto;
-}
 
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+p, li { font-size: 1rem; line-height: 1.6; }
 
 /* HEADER */
 header {
@@ -81,6 +82,23 @@ section#offer {
   border: 1px solid #ddd;
   margin-top: 0.5rem;
   border-radius: 5px;
+}
+.free-shipping-highlight {
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.free-shipping-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.shipping-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ORDER FORM */
