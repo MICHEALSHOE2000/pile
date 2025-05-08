@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Now - Hemorrhoid Relief</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fb;
+      color: #333;
+    }
+
+    header, .footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .order-form {
+      background: white;
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 12px;
+      max-width: 700px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .btn-primary {
+      background-color: #16a34a;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #15803d;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: gold;
+      margin: 5px 0;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h4 {
+      color: #1e3a8a;
+      margin-bottom: 5px;
+    }
+
+    .ingredients, .how-to-use {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Get Fast, Natural Relief from Hemorrhoids</h1>
+  </header>
+
+  <!-- Show selected package summary -->
+  <div id="selected-package" class="order-form"></div>
+
+  <!-- Order Form (Top) -->
+  <section class="order-form">
+    <h2>Ready to Feel Better?</h2>
+    <form id="orderFormBottom" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" id="packageBottom" name="package" value="">
+  
+      <label for="fullNameBottom">Full Name</label>
+      <input type="text" id="fullNameBottom" name="fullName" required>
+  
+      <label for="emailBottom">Email</label>
+      <input type="email" id="emailBottom" name="email" required>
+  
+      <label for="phoneBottom">Phone Number</label>
+      <input type="tel" id="phoneBottom" name="phone" required>
+  
+      <label for="countryBottom">Country</label>
+      <input type="text" id="countryBottom" name="country" required>
+  
+      <label for="addressBottom">Address</label>
+      <input type="text" id="addressBottom" name="address" required>
+  
+      <label for="cityBottom">City</label>
+      <input type="text" id="cityBottom" name="city" required>
+  
+      <label for="stateBottom">State</label>
+      <input type="text" id="stateBottom" name="state" required>
+  
+      <label for="zipBottom">ZIP Code</label>
+      <input type="text" id="zipBottom" name="zip" required>
+  
+      <button type="submit" class="btn-primary">Place Order Now</button>
+    </form>
+  </section>
+  
+
+  <!-- Testimonials -->
+  <section class="section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+        <p>"This product changed my life. No more pain, no more embarrassment!"</p>
+        <div class="stars">★★★★★</div>
+        <small>- Sarah J., New York</small>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+        <p>"I was skeptical, but it worked within days. Totally natural and effective."</p>
+        <div class="stars">★★★★★</div>
+        <small>- Daniel K., Florida</small>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer">
+        <p>"Doctor-recommended and worth every cent. I now recommend it to my friends."</p>
+        <div class="stars">★★★★★</div>
+        <small>- Lisa M., Texas</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- How To Use -->
+  <section class="section how-to-use">
+    <h2>How to Use</h2>
+    <ul>
+      <li>Apply a small amount to the affected area 2-3 times daily.</li>
+      <li>Use after bowel movements and before bedtime for best results.</li>
+      <li>Wash hands thoroughly after application.</li>
+      <li>Continue use for at least 7 days or until symptoms subside.</li>
+    </ul>
+  </section>
+
+  <!-- Ingredients -->
+  <section class="section ingredients">
+    <h2>What It's Made With</h2>
+    <ul>
+      <li><strong>Witch Hazel:</strong> Soothes irritation and reduces inflammation.</li>
+      <li><strong>Aloe Vera:</strong> Promotes healing and hydration.</li>
+      <li><strong>Horse Chestnut Extract:</strong> Strengthens veins and reduces swelling.</li>
+      <li><strong>Calendula:</strong> Supports skin regeneration and reduces pain.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>Is this product safe for sensitive skin?</h4>
+      <p>Yes, it's formulated with natural, skin-friendly ingredients suitable for most skin types.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How quickly does it work?</h4>
+      <p>Many customers experience relief within 2–3 days of regular use.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do I need a prescription?</h4>
+      <p>No, it's available over-the-counter and ships discreetly to your door.</p>
+    </div>
+  </section>
+
+  <!-- Order Form (Bottom) -->
+  <section class="order-form">
+    <h2>Ready to Feel Better?</h2>
+    <form id="orderFormBottom" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" id="packageBottom" name="package" value="">
+  
+      <label for="fullNameBottom">Full Name</label>
+      <input type="text" id="fullNameBottom" name="fullName" required>
+  
+      <label for="emailBottom">Email</label>
+      <input type="email" id="emailBottom" name="email" required>
+  
+      <label for="phoneBottom">Phone Number</label>
+      <input type="tel" id="phoneBottom" name="phone" required>
+  
+      <label for="countryBottom">Country</label>
+      <input type="text" id="countryBottom" name="country" required>
+  
+      <label for="addressBottom">Address</label>
+      <input type="text" id="addressBottom" name="address" required>
+  
+      <label for="cityBottom">City</label>
+      <input type="text" id="cityBottom" name="city" required>
+  
+      <label for="stateBottom">State</label>
+      <input type="text" id="stateBottom" name="state" required>
+  
+      <label for="zipBottom">ZIP Code</label>
+      <input type="text" id="zipBottom" name="zip" required>
+  
+      <button type="submit" class="btn-primary">Place Order Now</button>
+    </form>
+  </section>
+  
+  </section>
+
+  <footer class="footer">
+    <p>Secure checkout. All information is encrypted and kept confidential.</p>
+    <p>&copy; 2025 Hemorrhoid Relief Co.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const packageDetails = {
+      "1": {
+        title: "1 Bottle",
+        description: "Perfect for first-time users. 30-day supply.",
+        price: "$39 Total",
+        image: "https://via.placeholder.com/150?text=1+Bottle"
+      },
+      "3": {
+        title: "3 Bottles",
+        description: "Best Seller - Save more! 90-day supply.",
+        price: "$117 Total ($39 per bottle)",
+        image: "https://via.placeholder.com/150?text=3+Bottles"
+      },
+      "6": {
+        title: "6 Bottles",
+        description: "Maximum Relief - Save the most! 180-day supply.",
+        price: "$234 Total ($39 per bottle)",
+        image: "https://via.placeholder.com/150?text=6+Bottles"
+      }
+    };
+
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const selectedPackage = getQueryParam("package");
+
+    if (selectedPackage && packageDetails[selectedPackage]) {
+      const pkg = packageDetails[selectedPackage];
+
+      document.getElementById("selected-package").innerHTML = `
+        <div style="display: flex; align-items: center; gap: 20px; margin: 20px 0;">
+          <img src="${pkg.image}" alt="${pkg.title}" style="width: 120px; border-radius: 8px;" />
+          <div>
+            <h3 style="margin-bottom: 5px;">${pkg.title}</h3>
+            <p>${pkg.description}</p>
+            <p><strong>Price:</strong> ${pkg.price}</p>
+          </div>
+        </div>
+      `;
+
+      document.getElementById("packageTop").value = selectedPackage;
+      document.getElementById("packageBottom").value = selectedPackage;
+    } else {
+      document.getElementById("selected-package").innerHTML = `
+        <p style="color: red;">No package selected. Please <a href="index.html">go back</a> and choose a plan.</p>
+      `;
+    }
+  </script>
+</body>
+</html>
