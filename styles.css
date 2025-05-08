@@ -8,6 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 1em;
   padding: 0;
+  overflow-x: hidden;
   background: #ffffff;
   color: #333333;
   line-height: 1.6;
@@ -580,18 +581,4 @@ footer {
     gap: 1.5rem;
   }
 }
-<section id="scientific-references">
-  <h2>Scientific References</h2>
-  <ul>
-    <li>
-      <p><strong>Author(s):</strong> Smith, J., &amp; Brown, R. (2020). <em>Hemorrhoid Treatment: A Review of Methods and Outcomes.</em> <i>Journal of Gastrointestinal Health</i>, 15(3), 223-235. https://doi.org/10.1000/jgh.2020.0034</p>
-    </li>
-    <li>
-      <p><strong>Author(s):</strong> Lee, A. &amp; Thompson, M. (2019). <em>Modern Approaches to Hemorrhoid Management.</em> <i>Clinical Colorectal Disease</i>, 25(4), 305-317. https://doi.org/10.1000/ccd.2019.0215</p>
-    </li>
-    <li>
-      <p><strong>Author(s):</strong> Green, E., &amp; Patel, S. (2018). <em>Minimally Invasive Hemorrhoidectomy: A Review.</em> <i>Surgical Innovations</i>, 30(2), 112-119. https://doi.org/10.1000/si.2018.0158</p>
-    </li>
-    <!-- Add more references as needed -->
-  </ul>
-</section>
+`
