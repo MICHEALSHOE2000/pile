@@ -21,6 +21,11 @@ a {
   color: #1a73e8;
   text-decoration: none;
 }
+shipping-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* HEADER */
 header {
